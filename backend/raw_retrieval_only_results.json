@@ -1,0 +1,1014 @@
+{
+  "metadata": {
+    "evaluation_mode": "Retrieval-Only (Deterministic Multi-Aspect Heuristics)",
+    "pdf_corpus": "2025.findings-naacl.367.pdf",
+    "total_chunks": 110,
+    "trials_per_query": 3,
+    "indexing_time_seconds": 4.0645,
+    "timestamp": "2026-10-20 16:08:07"
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "queries": [
+        {
+          "query_id": "RQ1",
+          "query_text": "What is the constant value of k used in reciprocal rank fusion in MMLF?",
+          "ground_truth": [
+            "chunk_72",
+            "chunk_71"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 1,
+              "query_id": "RQ1",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.12676000001374632,
+              "retrieval_latency": 0.12675880000460893,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_71",
+                "chunk_72",
+                "chunk_46",
+                "chunk_31",
+                "chunk_11",
+                "chunk_67",
+                "chunk_35",
+                "chunk_70",
+                "chunk_12",
+                "chunk_97"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 1,
+              "query_id": "RQ1",
+              "recall5": 0.5,
+              "recall10": 1.0,
+              "ndcg10": 0.5640920940185894,
+              "mrr10": 0.5,
+              "total_latency": 0.08586150000337511,
+              "retrieval_latency": 0.08585849999508355,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_71",
+                "chunk_35",
+                "chunk_31",
+                "chunk_67",
+                "chunk_12",
+                "chunk_11",
+                "chunk_70",
+                "chunk_97",
+                "chunk_72"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 1,
+              "query_id": "RQ1",
+              "recall5": 0.5,
+              "recall10": 1.0,
+              "ndcg10": 0.7977228895450266,
+              "mrr10": 1.0,
+              "total_latency": 0.030249200004618615,
+              "retrieval_latency": 0.030113700006040744,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_71",
+                "chunk_46",
+                "chunk_35",
+                "chunk_67",
+                "chunk_31",
+                "chunk_12",
+                "chunk_70",
+                "chunk_11",
+                "chunk_72",
+                "chunk_97"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ2",
+          "query_text": "How does MMLF aggregate retrieval results using rank-based late fusion instead of similarity scores?",
+          "ground_truth": [
+            "chunk_70",
+            "chunk_71",
+            "chunk_72"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 1,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.6666666666666666,
+              "ndcg10": 0.6364391809889587,
+              "mrr10": 1.0,
+              "total_latency": 0.0118505999998888,
+              "retrieval_latency": 0.011849400005303323,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_71",
+                "chunk_69",
+                "chunk_48",
+                "chunk_101",
+                "chunk_10"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 1,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.3333333333333333,
+              "ndcg10": 0.46927872602275644,
+              "mrr10": 1.0,
+              "total_latency": 0.03883289999794215,
+              "retrieval_latency": 0.038831400001072325,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_69",
+                "chunk_2",
+                "chunk_10",
+                "chunk_101",
+                "chunk_48"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 1,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.6666666666666666,
+              "ndcg10": 0.6105456988825855,
+              "mrr10": 1.0,
+              "total_latency": 0.029508899999200366,
+              "retrieval_latency": 0.029421700004604645,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_69",
+                "chunk_10",
+                "chunk_2",
+                "chunk_71",
+                "chunk_48"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ3",
+          "query_text": "Compare MMLF with MILL regarding passage concatenation versus late fusion",
+          "ground_truth": [
+            "chunk_85",
+            "chunk_84",
+            "chunk_68"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 1,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.012750300011248328,
+              "retrieval_latency": 0.012749500005156733,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_36",
+                "chunk_46",
+                "chunk_35",
+                "chunk_14",
+                "chunk_45",
+                "chunk_10",
+                "chunk_97",
+                "chunk_48"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 1,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.03865630000655074,
+              "retrieval_latency": 0.03865539999969769,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_46",
+                "chunk_35",
+                "chunk_36",
+                "chunk_14",
+                "chunk_45",
+                "chunk_97",
+                "chunk_48",
+                "chunk_20"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 1,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.06203980000282172,
+              "retrieval_latency": 0.062017100004595704,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_46",
+                "chunk_35",
+                "chunk_36",
+                "chunk_14",
+                "chunk_48",
+                "chunk_10",
+                "chunk_97",
+                "chunk_45"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ4",
+          "query_text": "What are the computational limitations of MMLF identified by authors in real-time or large-scale systems?",
+          "ground_truth": [
+            "chunk_46"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 1,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.011564000000362284,
+              "retrieval_latency": 0.011563399995793588,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_12",
+                "chunk_45",
+                "chunk_101",
+                "chunk_48",
+                "chunk_20",
+                "chunk_97",
+                "chunk_36",
+                "chunk_29",
+                "chunk_102"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 1,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.04434900000342168,
+              "retrieval_latency": 0.04434839999885298,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_12",
+                "chunk_45",
+                "chunk_20",
+                "chunk_48",
+                "chunk_101",
+                "chunk_97",
+                "chunk_29",
+                "chunk_36",
+                "chunk_102"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 1,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 0.6309297535714575,
+              "mrr10": 0.5,
+              "total_latency": 0.02565389999654144,
+              "retrieval_latency": 0.025615000005927868,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_46",
+                "chunk_45",
+                "chunk_48",
+                "chunk_36",
+                "chunk_20",
+                "chunk_101",
+                "chunk_97",
+                "chunk_29",
+                "chunk_42"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "queries": [
+        {
+          "query_id": "RQ1",
+          "query_text": "What is the constant value of k used in reciprocal rank fusion in MMLF?",
+          "ground_truth": [
+            "chunk_72",
+            "chunk_71"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 2,
+              "query_id": "RQ1",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.011174899991601706,
+              "retrieval_latency": 0.011174100000062026,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_71",
+                "chunk_72",
+                "chunk_46",
+                "chunk_31",
+                "chunk_11",
+                "chunk_67",
+                "chunk_35",
+                "chunk_70",
+                "chunk_12",
+                "chunk_97"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 2,
+              "query_id": "RQ1",
+              "recall5": 0.5,
+              "recall10": 1.0,
+              "ndcg10": 0.5640920940185894,
+              "mrr10": 0.5,
+              "total_latency": 0.03661809999903198,
+              "retrieval_latency": 0.03661719999217894,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_71",
+                "chunk_35",
+                "chunk_31",
+                "chunk_67",
+                "chunk_12",
+                "chunk_11",
+                "chunk_70",
+                "chunk_97",
+                "chunk_72"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 2,
+              "query_id": "RQ1",
+              "recall5": 0.5,
+              "recall10": 1.0,
+              "ndcg10": 0.7977228895450266,
+              "mrr10": 1.0,
+              "total_latency": 0.028863799991086125,
+              "retrieval_latency": 0.0288284999987809,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_71",
+                "chunk_46",
+                "chunk_35",
+                "chunk_67",
+                "chunk_31",
+                "chunk_12",
+                "chunk_70",
+                "chunk_11",
+                "chunk_72",
+                "chunk_97"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ2",
+          "query_text": "How does MMLF aggregate retrieval results using rank-based late fusion instead of similarity scores?",
+          "ground_truth": [
+            "chunk_70",
+            "chunk_71",
+            "chunk_72"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 2,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.6666666666666666,
+              "ndcg10": 0.6364391809889587,
+              "mrr10": 1.0,
+              "total_latency": 0.0142271999939112,
+              "retrieval_latency": 0.01422640000237152,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_71",
+                "chunk_69",
+                "chunk_48",
+                "chunk_101",
+                "chunk_10"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 2,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.3333333333333333,
+              "ndcg10": 0.46927872602275644,
+              "mrr10": 1.0,
+              "total_latency": 0.05041870000422932,
+              "retrieval_latency": 0.050417500009643845,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_69",
+                "chunk_2",
+                "chunk_10",
+                "chunk_101",
+                "chunk_48"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 2,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.6666666666666666,
+              "ndcg10": 0.6105456988825855,
+              "mrr10": 1.0,
+              "total_latency": 0.02071940001042094,
+              "retrieval_latency": 0.020674900006270036,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_69",
+                "chunk_10",
+                "chunk_2",
+                "chunk_71",
+                "chunk_48"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ3",
+          "query_text": "Compare MMLF with MILL regarding passage concatenation versus late fusion",
+          "ground_truth": [
+            "chunk_85",
+            "chunk_84",
+            "chunk_68"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 2,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.011408699996536598,
+              "retrieval_latency": 0.011408300008042715,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_36",
+                "chunk_46",
+                "chunk_35",
+                "chunk_14",
+                "chunk_45",
+                "chunk_10",
+                "chunk_97",
+                "chunk_48"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 2,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.03576860000612214,
+              "retrieval_latency": 0.035767900000792,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_46",
+                "chunk_35",
+                "chunk_36",
+                "chunk_14",
+                "chunk_45",
+                "chunk_97",
+                "chunk_48",
+                "chunk_20"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 2,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.0626334999979008,
+              "retrieval_latency": 0.06259319999662694,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_46",
+                "chunk_35",
+                "chunk_36",
+                "chunk_14",
+                "chunk_48",
+                "chunk_10",
+                "chunk_97",
+                "chunk_45"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ4",
+          "query_text": "What are the computational limitations of MMLF identified by authors in real-time or large-scale systems?",
+          "ground_truth": [
+            "chunk_46"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 2,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.014600499998778105,
+              "retrieval_latency": 0.014599700007238425,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_12",
+                "chunk_45",
+                "chunk_101",
+                "chunk_48",
+                "chunk_20",
+                "chunk_97",
+                "chunk_36",
+                "chunk_29",
+                "chunk_102"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 2,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.03864729999622796,
+              "retrieval_latency": 0.03864630000316538,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_12",
+                "chunk_45",
+                "chunk_20",
+                "chunk_48",
+                "chunk_101",
+                "chunk_97",
+                "chunk_29",
+                "chunk_36",
+                "chunk_102"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 2,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 0.6309297535714575,
+              "mrr10": 0.5,
+              "total_latency": 0.0329487999988487,
+              "retrieval_latency": 0.032893700001295656,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_46",
+                "chunk_45",
+                "chunk_48",
+                "chunk_36",
+                "chunk_20",
+                "chunk_101",
+                "chunk_97",
+                "chunk_29",
+                "chunk_42"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "queries": [
+        {
+          "query_id": "RQ1",
+          "query_text": "What is the constant value of k used in reciprocal rank fusion in MMLF?",
+          "ground_truth": [
+            "chunk_72",
+            "chunk_71"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 3,
+              "query_id": "RQ1",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.013371900000493042,
+              "retrieval_latency": 0.013370999993639998,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_71",
+                "chunk_72",
+                "chunk_46",
+                "chunk_31",
+                "chunk_11",
+                "chunk_67",
+                "chunk_35",
+                "chunk_70",
+                "chunk_12",
+                "chunk_97"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 3,
+              "query_id": "RQ1",
+              "recall5": 0.5,
+              "recall10": 1.0,
+              "ndcg10": 0.5640920940185894,
+              "mrr10": 0.5,
+              "total_latency": 0.04343800000788178,
+              "retrieval_latency": 0.04343679999874439,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_71",
+                "chunk_35",
+                "chunk_31",
+                "chunk_67",
+                "chunk_12",
+                "chunk_11",
+                "chunk_70",
+                "chunk_97",
+                "chunk_72"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 3,
+              "query_id": "RQ1",
+              "recall5": 0.5,
+              "recall10": 1.0,
+              "ndcg10": 0.7977228895450266,
+              "mrr10": 1.0,
+              "total_latency": 0.02925709998817183,
+              "retrieval_latency": 0.0292022000066936,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_71",
+                "chunk_46",
+                "chunk_35",
+                "chunk_67",
+                "chunk_31",
+                "chunk_12",
+                "chunk_70",
+                "chunk_11",
+                "chunk_72",
+                "chunk_97"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ2",
+          "query_text": "How does MMLF aggregate retrieval results using rank-based late fusion instead of similarity scores?",
+          "ground_truth": [
+            "chunk_70",
+            "chunk_71",
+            "chunk_72"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 3,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.6666666666666666,
+              "ndcg10": 0.6364391809889587,
+              "mrr10": 1.0,
+              "total_latency": 0.01396629998635035,
+              "retrieval_latency": 0.013965700010885485,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_71",
+                "chunk_69",
+                "chunk_48",
+                "chunk_101",
+                "chunk_10"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 3,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.3333333333333333,
+              "ndcg10": 0.46927872602275644,
+              "mrr10": 1.0,
+              "total_latency": 0.04739009999320842,
+              "retrieval_latency": 0.047389200000907294,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_69",
+                "chunk_2",
+                "chunk_10",
+                "chunk_101",
+                "chunk_48"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 3,
+              "query_id": "RQ2",
+              "recall5": 0.3333333333333333,
+              "recall10": 0.6666666666666666,
+              "ndcg10": 0.6105456988825855,
+              "mrr10": 1.0,
+              "total_latency": 0.02709560000221245,
+              "retrieval_latency": 0.02703390001261141,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_70",
+                "chunk_35",
+                "chunk_46",
+                "chunk_97",
+                "chunk_13",
+                "chunk_69",
+                "chunk_10",
+                "chunk_2",
+                "chunk_71",
+                "chunk_48"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ3",
+          "query_text": "Compare MMLF with MILL regarding passage concatenation versus late fusion",
+          "ground_truth": [
+            "chunk_85",
+            "chunk_84",
+            "chunk_68"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 3,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.02507340000011027,
+              "retrieval_latency": 0.02507270000933204,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_36",
+                "chunk_46",
+                "chunk_35",
+                "chunk_14",
+                "chunk_45",
+                "chunk_10",
+                "chunk_97",
+                "chunk_48"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 3,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.04924150000442751,
+              "retrieval_latency": 0.049240499996813014,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_46",
+                "chunk_35",
+                "chunk_36",
+                "chunk_14",
+                "chunk_45",
+                "chunk_97",
+                "chunk_48",
+                "chunk_20"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 3,
+              "query_id": "RQ3",
+              "recall5": 0.0,
+              "recall10": 0.0,
+              "ndcg10": 0.0,
+              "mrr10": 0.0,
+              "total_latency": 0.0709707000060007,
+              "retrieval_latency": 0.07093319999694359,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_11",
+                "chunk_46",
+                "chunk_35",
+                "chunk_36",
+                "chunk_14",
+                "chunk_48",
+                "chunk_10",
+                "chunk_97",
+                "chunk_45"
+              ]
+            }
+          }
+        },
+        {
+          "query_id": "RQ4",
+          "query_text": "What are the computational limitations of MMLF identified by authors in real-time or large-scale systems?",
+          "ground_truth": [
+            "chunk_46"
+          ],
+          "systems": {
+            "Baseline": {
+              "trial": 3,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.01205150000168942,
+              "retrieval_latency": 0.012050699995597824,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_12",
+                "chunk_45",
+                "chunk_101",
+                "chunk_48",
+                "chunk_20",
+                "chunk_97",
+                "chunk_36",
+                "chunk_29",
+                "chunk_102"
+              ]
+            },
+            "Fixed_MMLF": {
+              "trial": 3,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 1.0,
+              "mrr10": 1.0,
+              "total_latency": 0.04140269999334123,
+              "retrieval_latency": 0.04140190000180155,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_46",
+                "chunk_12",
+                "chunk_45",
+                "chunk_20",
+                "chunk_48",
+                "chunk_101",
+                "chunk_97",
+                "chunk_29",
+                "chunk_36",
+                "chunk_102"
+              ]
+            },
+            "Ada_MMLF": {
+              "trial": 3,
+              "query_id": "RQ4",
+              "recall5": 1.0,
+              "recall10": 1.0,
+              "ndcg10": 0.6309297535714575,
+              "mrr10": 0.5,
+              "total_latency": 0.0273254000057932,
+              "retrieval_latency": 0.027287799995974638,
+              "llm_latency": 0.0,
+              "llm_calls": 0,
+              "retrieved_ids": [
+                "chunk_12",
+                "chunk_46",
+                "chunk_45",
+                "chunk_48",
+                "chunk_36",
+                "chunk_20",
+                "chunk_101",
+                "chunk_97",
+                "chunk_29",
+                "chunk_42"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
