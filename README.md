@@ -113,3 +113,4 @@ aurasync/
 - All sensitive credentials and local files should be placed in `.env` (ignored by git).
 - Large binary artifacts, database checkpoints, and model weights are excluded via `.gitignore`.
 - See `frontend/.env.example` for environment variable templates.
+
